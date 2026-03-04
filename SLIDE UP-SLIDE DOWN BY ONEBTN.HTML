@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        p{
+            padding: 15px;
+            background-color: red;
+        }
+
+
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").slideUp(800);
+            });
+
+            $("button").click(function(){
+                $("p").slideDown(1000);
+            });
+        })
+    </script>
+</head>
+<body>
+    <button>SLIDE UP - SLIDE DOWN</button>
+    <P>Lorem ipsum dolor sit amet.</P>
+    <P>Lorem ipsum dolor sit amet.</P>
+    <P>Lorem ipsum dolor sit amet.</P>
+    <P>Lorem ipsum dolor sit amet.</P>
+</body>
+</html>

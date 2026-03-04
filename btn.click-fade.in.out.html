@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        p{
+            padding: 15px;
+            background-color: blueviolet;
+            text-align: center;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".p1").css("background-color","sky").fadeIn(2800).fadeOut(2800);
+                $(".p2").css("background-color","green").fadeIn(2500).fadeOut(2500);
+                $(".p3").css("background-color","red").fadeIn(2200).fadeOut(2200);
+                $(".p4").css("background-color","yellow").fadeIn(2000).fadeOut(2000);
+            })
+        })
+    </script>
+</head>
+<body>
+   <button>Fade-in/Fade-out</button> 
+   <p class="p1">Lorem ipsum dolor sit amet.</p>
+   <p class="p2">Lorem ipsum dolor sit amet.</p>
+   <p class="p3">Lorem ipsum dolor sit amet.</p>
+   <p class="p4">Lorem ipsum dolor sit amet.</p>
+</body>
+</html>

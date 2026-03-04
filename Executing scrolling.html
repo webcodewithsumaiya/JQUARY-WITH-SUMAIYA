@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        p{
+            width: 100%;
+            padding: 50px;
+            text-align: center;
+            background: aqua;
+            position: fixed;
+            top: 50px;
+            display: none;
+        }
+
+        div{
+            height: 500px;
+            text-align: center;
+
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                $("p").show().fadeOut("slow");
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <p>Scrolling event in Jquary</p>
+    <div style="background-color: pink;">MY NAME IS SUMAIYA</div>
+    <div style="background-color: yellow;">MY NAME IS SARMIN</div>
+    <div style="background-color: blueviolet;">MY NAME IS ZOYA</div>
+    <div style="background-color: green;">MY NAME IS AMRIN</div>
+    <div style="background-color: RED;">MY NAME IS AYRA</div>
+</body>
+</html>

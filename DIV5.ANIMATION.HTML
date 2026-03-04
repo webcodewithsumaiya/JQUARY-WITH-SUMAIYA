@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style type="text/css">
+        .p3{
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+        }
+        .p4{
+            background-color: red;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#p2").fadeOut(3000, function(){
+                $("#p1").prepend("My fadeout event has comepeleted");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="p1" class="p4"></div>
+    <div id="p2" class="p3"></div>
+</body>
+</html>

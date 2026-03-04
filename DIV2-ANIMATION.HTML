@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("button").click(function(){
+                var a= $("div");
+                a.animate({height:'200px'},2000);
+                a.animate({width:'200px'},2000);
+                a.animate({height:'50px'},2000);
+                a.animate({width:'50px'},2000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>Click on me</button>
+    <div style="background-color: rgb(38, 83, 218); height: 50px; width: 50px; position: absolute;"></div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUARY.TEXT FUNCTION</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        p{
+            font-family: 'Segoe UI', Tahoma;
+            text-align: center;
+            padding: 15px;
+            background-color: red;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".b1").click(function(){
+                $("p").text("Hello Jquary").css("background-color","aqua");
+            });
+            $(".b2").click(function(){
+                $(".p2").text("Hello J.S").css("background-color","yellow");
+            });
+            $(".b3").click(function(){
+                $(".p3").text("Hello CSS").css("background-color","pink");
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <button class="b1">All change</button>
+    <button class="b2">Second change</button>
+    <button class="b3">Third change</button><br>
+    <p class="p1">Hellow world</p>
+    <p class="p2">Hellow world</p>
+    <p class="p3">Hellow world</p>
+
+</body>
+</html>

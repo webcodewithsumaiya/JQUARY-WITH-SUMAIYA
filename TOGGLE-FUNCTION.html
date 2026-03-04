@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOW TO USE Toggel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        p {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .p1 {
+            background-color: rgba(103, 146, 40, 0.961);
+        }
+
+        .p2 {
+            background-color: red;
+        }
+
+        .p3 {
+            background-color: yellow;
+        }
+
+        .p4 {
+            background-color: purple;
+        }
+
+        .p5 {
+            background-color: blue;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".p1").toggle(3000);
+                $(".p2").toggle(2700);
+                $(".p3").toggle(2500);
+                $(".p4").toggle(2300);
+                $(".p5").toggle(2000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button>Toggle button</button>
+    <p class="p1">Lorem ipsum dolor sit amet.</p>
+    <p class="p2">Lorem ipsum dolor sit amet.</p>
+    <p class="p3">Lorem ipsum dolor sit amet.</p>
+    <p class="p4">Lorem ipsum dolor sit amet.</p>
+    <p class="p5">Lorem ipsum dolor sit amet.</p>
+</body>
+
+</html>
